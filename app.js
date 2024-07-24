@@ -1,10 +1,9 @@
 const app = Vue.createApp({
-
-    template:'<h1>HEllo {{firstName}}</h1>',
-    
     data(){
         return {
-            firstName:'Nitesh'
+            firstName:'Nitesh',
+            lastName:"nitesh",
+            picture:"https://picsum.photos/200/300"
         }
     }
 })
