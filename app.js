@@ -8,11 +8,15 @@ const app = Vue.createApp({
         }
     },
     methods:{
-        getUser(){
-            this.firstName='Nk',
-            this.lastName="kkr",
-            this.picture="https://picsum.photos/200/300",
-            this.gender="male"
+       async getUser(){
+            const res = await fetch('https://randomuser.me/api')
+            const {results} = await res.json()
+             
+
+            this.firstName=results[0].first,
+            this.lastName=results[0].last,
+            this.picture=results[0].picture.large,
+            this.gender=results[0].gender
         }
     }
 })
