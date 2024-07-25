@@ -10,7 +10,7 @@ import Tasks from "./components/Tasks.vue";
   tasksValue.value =[
     { id: 1, text: "task 1", day: "March 1st at 2:30", reminder: true },
     { id: 2, text: "task 2", day: "March 1st at 2:30", reminder: true },
-    { id: 3, text: "task 3", day: "March 1st at 2:30", reminder: true }
+    { id: 3, text: "task 3", day: "March 1st at 2:30", reminder: false }
   ];
 });
 

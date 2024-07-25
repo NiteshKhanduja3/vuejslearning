@@ -1,16 +1,21 @@
 <!-- scripts -->
 <script setup>
-const props = defineProps({
-    tasksValue: { type: Array, required: true },
+import Task from "./Task.vue";
+
+defineProps({
+  tasksValue: { type: Array, required: true },
+  onDelete:{
+    type:Function,
+    required:true
+  }
 });
 
-console.log("Props",props.tasksValue)
-
+defineEmit()
 </script>
 
 <!-- template -->
 <template>
   <div :key="task.id" v-for="task in tasksValue">
-    <h3>{{ task.text }}</h3>
+    <Task :task="task" :onDelete:"onDelete" />
   </div>
 </template>
