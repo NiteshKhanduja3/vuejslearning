@@ -1,14 +1,14 @@
 <script setup>
-definePageMeta({
-    layout:'custom'
-})
+// definePageMeta({
+//     layout:'custom'
+// })
 </script>
 
 <template>
-    <ul>
-      <template >
-        <li>Nitesh</li>
-        <li>Niesh 2</li>
-      </template>
-    </ul>
+    <div>
+      <NuxtLayout name="custom">
+        <template #socialmedia>how to write named slots </template>
+      </NuxtLayout>
+    </div>
   </template>
+  
