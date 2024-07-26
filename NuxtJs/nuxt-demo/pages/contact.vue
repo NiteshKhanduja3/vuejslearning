@@ -4,9 +4,11 @@ definePageMeta({
 })
 </script>
 
-
 <template>
-       
-    <h1>Contact  us page</h1>
-
-</template>
+    <ul>
+      <template >
+        <li>Nitesh</li>
+        <li>Niesh 2</li>
+      </template>
+    </ul>
+  </template>
