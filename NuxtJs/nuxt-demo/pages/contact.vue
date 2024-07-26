@@ -1,4 +1,4 @@
-<script>
+<script setup>
 definePageMeta({
     layout:false
 })
@@ -9,5 +9,5 @@ definePageMeta({
         <NuxtLayout name="custom"  >
     <h1>Contact  us page</h1>
     </NuxtLayout>
-    
+
 </template>
